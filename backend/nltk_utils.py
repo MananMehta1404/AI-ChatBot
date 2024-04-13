@@ -13,9 +13,9 @@ def tokenize(sentence):
 
     return nltk.word_tokenize(sentence)
 
-sentence = "Hey, how are you doing today?"
-tokenized_sentence = tokenize(sentence)
-print(tokenized_sentence)
+# sentence = "Hey, how are you doing today?"
+# tokenized_sentence = tokenize(sentence)
+# print(tokenized_sentence)
 
 # Stemming
 def stem(word):
@@ -29,9 +29,9 @@ def stem(word):
 
     return stemmer.stem(word.lower())
 
-words = ["run", "running", "runs"]
-words = [stem(w) for w in words]
-print(words)
+# words = ["run", "running", "runs"]
+# words = [stem(w) for w in words]
+# print(words)
 
 # Bag of words
 def bag_of_words(tokenized_sentence, words):
@@ -54,6 +54,6 @@ def bag_of_words(tokenized_sentence, words):
 
     return bag
 
-all_words = ["hi", "hello", "I", "you", "bye", "thank", "cool", "how"]
-bag = bag_of_words(tokenized_sentence, all_words)
-print(bag)
+# all_words = ["hi", "hello", "I", "you", "bye", "thank", "cool", "how"]
+# bag = bag_of_words(tokenized_sentence, all_words)
+# print(bag)
