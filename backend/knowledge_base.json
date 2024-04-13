@@ -1,0 +1,148 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hey",
+          "How are you",
+          "Is anyone there?",
+          "Hello",
+          "Good day"
+        ],
+        "responses": [
+          "Hey there",
+          "Hello, thanks for visiting",
+          "Hi there, what can I do for you?",
+          "Hi there, how can I help?"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye"],
+        "responses": [
+          "See you later, thanks for visiting",
+          "Have a nice day",
+          "Bye! Come back again soon."
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": [
+            "Thanks", 
+            "Thank you", 
+            "That's helpful", 
+            "Thank's a lot!"
+        ],
+        "responses": [
+            "Happy to help!", 
+            "Any time!", 
+            "My pleasure"
+        ]
+      },
+      {
+        "tag": "courses",
+        "patterns": [
+          "Which courses do you offer?",
+          "What type of courses are there?",
+          "What do you offer?"
+        ],
+        "responses": [
+          "We offer courses related to computer science domain",
+          "We have courses in web development, data science, and more"
+        ]
+      },
+      {
+        "tag": "payments",
+        "patterns": [
+          "Do you take credit cards?",
+          "Do you accept Mastercard?",
+          "Can I pay with Paypal?",
+          "Are you cash only?",
+          "Can I pay in EMI for this course?",
+          "Does this course offer financial aid for under-privileged students?",
+          "Is there any money back guarantee if I did not like the course?"
+        ],
+        "responses": [
+          "We accept VISA, Mastercard and Paypal",
+          "We accept most major credit cards, and Paypal",
+          "We don't accept cash payments",
+          "We don't offer any EMI options for this course",
+          "As the prices of our courses are very minimal, we don't offer any financial aid",
+          "Sadly there is no money back guarantee for this course"
+        ]
+      },
+      {
+        "tag": "about",
+        "patterns": [
+          "Suitable for beginner or advanced users?",
+          "Can I learn at my own pace?",
+          "How long does this course take to complete?",
+          "How much does the course cost?",
+          "Is it an online or offline course?",
+          "Is this course relevant in today's market?"
+        ],
+        "responses": [
+          "This course is beginner friendly but we have provided roadmaps for advanced users",
+          "The validity of this course is 2 years so you can learn at your own pace and finish the course within that time",
+          "It's a purely online course but you will get everything similar to an offline course like tutorials, doubt support, etc.",
+          "Every course of ours is created by industrial experts who have extensive knowledge of computer science so it is definitely relevant in today's market",
+          "See every course has a different cost and it is very minimal so anyone can afford it"
+        ]
+      },
+      {
+        "tag": "prerequisites",
+        "patterns": [
+          "What are the pre-requirement for this course?",
+          "Is good DSA a prerequisite for this course?",
+          "What do I need to know?"
+        ],
+        "responses": [
+          "There is no specific prerequisite for this course. The course can be taken by anyone",
+          "DSA is not a prerequisite for this course, but if you have basic knowledge of DSA then it will be helpful",
+          "This course is for beginners so you will get to learn the concepts from the very basics"
+        ]
+      },
+      {
+        "tag": "features",
+        "patterns": [
+          "What type of assignment do you give?",
+          "What about the doubt support?",
+          "Does this course offer placement opportunities also?",
+          "How is the course different from other platform courses?",
+          "Does this course offer any certificate?",
+          "Where can I get testimonials for this course?",
+          "Do I get a mentor for this course?"
+        ],
+        "responses": [
+          "We offer a variety of assignments tailored to enhance your learning experience. These assignments may include practical exercises, case studies, projects, quizzes, and more, designed to reinforce your understanding of the course material.",
+          "Doubt support is a crucial aspect of our courses. We have dedicated experts for solving the doubts of our students",
+          "No we don't offer placement opportunities within the course but after completing the course you will definitely be able to find a job on your own",
+          "Yes, upon successful completion of the course requirements, you will receive a certificate of completion.",
+          "Testimonials from satisfied students can be found on our website or through our social media channels.",
+          "Yes, each student enrolled in our course is assigned a mentor who provides guidance, support, and feedback throughout the duration of the course."
+        ]
+      },
+      {
+        "tag": "others",
+        "patterns": [
+          "How much I can make after completing this course?"
+        ],
+        "responses": [
+          "See it completely depends on you. How you completed this course and how much do you learn. Our students have got a maximum of 30 LPA after completing this course"
+        ]
+      },
+      {
+        "tag": "funny",
+        "patterns": [
+          "Tell me a joke!",
+          "Tell me something funny!",
+          "Do you know a joke?"
+        ],
+        "responses": [
+          "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+          "What did the buffalo say when his son left for college? Bison."
+        ]
+      }
+    ]
+  }
