@@ -1,4 +1,5 @@
 import nltk
+import numpy as np
 # nltk.download('punkt')
 from nltk.stem.porter import PorterStemmer
 stemmer = PorterStemmer()
@@ -31,3 +32,28 @@ def stem(word):
 words = ["run", "running", "runs"]
 words = [stem(w) for w in words]
 print(words)
+
+# Bag of words
+def bag_of_words(tokenized_sentence, words):
+    """
+    Return bag of words array: 1 for each known word that exists in the sentence, otherwise 0
+    example:
+        sentence = ["hello", "how", "are", "you"]
+        words = ["hi", "hello", "I", "you", "bye", "thank", "cool"]
+        bag   = [  0 ,    1 ,    0 ,   1 ,    0 ,    0 ,      0]
+    """
+
+    # Stem each word
+    sentence_words = [stem(word) for word in tokenized_sentence]
+
+    # Initialize bag with 0 for each word
+    bag = np.zeros(len(words), dtype=np.float32)
+    for idx, w in enumerate(words):
+        if w in sentence_words: 
+            bag[idx] = 1
+
+    return bag
+
+all_words = ["hi", "hello", "I", "you", "bye", "thank", "cool", "how"]
+bag = bag_of_words(tokenized_sentence, all_words)
+print(bag)
