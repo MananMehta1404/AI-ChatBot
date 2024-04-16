@@ -1,5 +1,9 @@
 # AI Chatbot with Flask and JavaScript
 
+
+https://github.com/MananMehta1404/AI-ChatBot/assets/93565760/683e9508-1c47-4e0f-a43d-72ca5c7be3b8
+
+
 ## Initial Setup:
 
 Clone repo and create a virtual environment
