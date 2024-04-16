@@ -80,11 +80,11 @@ class ChatDataset(Dataset):
         return self.n_samples
 
 # Hyper-parameters
-num_epochs = 1000
-batch_size = 8
+num_epochs = 10000
+batch_size = 20
 learning_rate = 0.001
 input_size = len(X_train[0])
-hidden_size = 8
+hidden_size = 20
 output_size = len(tags)
 print(input_size, output_size)
 

@@ -5,10 +5,9 @@
         "patterns": [
           "Hi",
           "Hey",
-          "How are you",
           "Is anyone there?",
           "Hello",
-          "Good day"
+          "Good Morning"
         ],
         "responses": [
           "Hey there",
@@ -19,7 +18,7 @@
       },
       {
         "tag": "goodbye",
-        "patterns": ["Bye", "See you later", "Goodbye"],
+        "patterns": ["Bye", "Byee", "See you later", "Goodbye"],
         "responses": [
           "See you later, thanks for visiting",
           "Have a nice day",
@@ -32,7 +31,8 @@
             "Thanks", 
             "Thank you", 
             "That's helpful", 
-            "Thank's a lot!"
+            "Thank's a lot!",
+            "Thank you for your help"
         ],
         "responses": [
             "Happy to help!", 
@@ -48,8 +48,7 @@
           "What do you offer?"
         ],
         "responses": [
-          "We offer courses related to computer science domain",
-          "We have courses in web development, data science, and more"
+          "We provide diverse courses in computer science, spanning web development, data science, machine learning and beyond."
         ]
       },
       {
@@ -58,35 +57,90 @@
           "Do you take credit cards?",
           "Do you accept Mastercard?",
           "Can I pay with Paypal?",
-          "Are you cash only?",
-          "Can I pay in EMI for this course?",
-          "Does this course offer financial aid for under-privileged students?",
-          "Is there any money back guarantee if I did not like the course?"
+          "Do you accept cash payments?"
         ],
         "responses": [
-          "We accept VISA, Mastercard and Paypal",
-          "We accept most major credit cards, and Paypal",
-          "We don't accept cash payments",
+          "We accept most major credit cards, VISA, Mastercard and Paypal but we don't accept cash payments"
+        ]
+      },
+      {
+        "tag": "emi",
+        "patterns": [
+          "Can I pay in EMI for this course?",
+          "Is there any EMI options for this course?",
+          "How can I pay in EMI?"
+        ],
+        "responses": [
           "We don't offer any EMI options for this course",
-          "As the prices of our courses are very minimal, we don't offer any financial aid",
-          "Sadly there is no money back guarantee for this course"
+          "As the prices of our courses are very minimal, we don't offer any EMI options"
+        ]
+      },
+      {
+        "tag": "privileges",
+        "patterns": [
+          "Does this course offer any financial aid for under-privileged students?",
+          "Are there any privileges for this course?",
+          "Do you offer any special privileges for this course?",
+          "What are the special privileges for this course?"
+        ],
+        "responses": [
+          "We don't offer any special privileges for this course",
+          "As the prices of our courses are very minimal, we don't offer any special privileges"
+        ]
+      },
+      {
+        "tag": "moneyback",
+        "patterns": [
+          "Can I get a money back guarantee if I did not like the course?",
+          "Is there any money back guarantee if I did not like the course?",
+          "Do you offer any money back guarantee if I did not like the course?"
+        ],
+        "responses": [
+          "We don't offer any money back guarantee for this course",
+          "Sadly there is no money back guarantee for this course",
+          "As the prices of our courses are very minimal, we don't offer any money back guarantee"
         ]
       },
       {
         "tag": "about",
         "patterns": [
           "Suitable for beginner or advanced users?",
-          "Can I learn at my own pace?",
-          "How long does this course take to complete?",
-          "How much does the course cost?",
-          "Is it an online or offline course?",
-          "Is this course relevant in today's market?"
+          "Is it an online or offline course?"
         ],
         "responses": [
-          "This course is beginner friendly but we have provided roadmaps for advanced users",
-          "The validity of this course is 2 years so you can learn at your own pace and finish the course within that time",
-          "It's a purely online course but you will get everything similar to an offline course like tutorials, doubt support, etc.",
-          "Every course of ours is created by industrial experts who have extensive knowledge of computer science so it is definitely relevant in today's market",
+          "Our courses are purely online and are suitable for beginners aa well as advanced users"
+        ]
+      },
+      {
+        "tag": "relevant",
+        "patterns": [
+          "Is this course relevant in today's market?",
+          "Who has developed this course?"
+        ],
+        "responses": [
+          "Every course of ours is created by industrial experts who have extensive knowledge of computer science so it is definitely relevant in today's market"
+        ]
+      },
+      {
+        "tag": "duration",
+        "patterns": [
+          "How long does this course take to complete?",
+          "How many hours does this course take to complete?",
+          "Can I learn at my own pace?",
+          "How much time does this course take?"
+        ],
+        "responses": [
+          "The validity of this course is 2 years so you can learn at your own pace and finish the course within that time"
+        ]
+      },
+      {
+        "tag": "fees",
+        "patterns": [
+          "What is the fee for the courses?",
+          "How much does the course cost?",
+          "How much does it cost to attend the course?"
+        ],
+        "responses": [
           "See every course has a different cost and it is very minimal so anyone can afford it"
         ]
       },
@@ -99,28 +153,88 @@
         ],
         "responses": [
           "There is no specific prerequisite for this course. The course can be taken by anyone",
-          "DSA is not a prerequisite for this course, but if you have basic knowledge of DSA then it will be helpful",
-          "This course is for beginners so you will get to learn the concepts from the very basics"
+          "This course is for beginners so you will get to learn the concepts from the very basics. There is no need of any prerequisites"
+        ]
+      },
+      {
+        "tag": "assignment",
+        "patterns": [
+          "What type of assignments do you provide?",
+          "What are the different types of assignments in this course?",
+          "Do you provide any assignments?"
+        ],
+        "responses": [
+          "We provide various types of assignments. These assignments may include practical exercises, quizzes projects, and more"
+        ]
+      },
+      {
+        "tag": "doubt",
+        "patterns": [
+          "What about the doubt support?",
+          "How can I resolve my doubt?",
+          "Can I ask for help with my doubt?",
+          "Is there any doubt support available?"
+        ],
+        "responses": [
+          "Doubt support is a crucial aspect of our courses. We have dedicated experts for solving the doubts of our students",
+          "We have a doubt resolution team who can help you with your doubt. You can ask for help with your doubt through our support team"
+        ]
+      },
+      {
+        "tag": "mentor",
+        "patterns": [
+          "Do I get a mentor for this course?",
+          "Is there any mentor available for this course?"
+        ],
+        "responses": [
+          "Yes, each student enrolled in our course is assigned a mentor who provides guidance, support, and feedback throughout the duration of the course"
+        ]
+      },
+      {
+        "tag": "placement",
+        "patterns": [
+          "Does this course offer any placement opportunities?",
+          "Do I get a placement opportunity after completing the course?"
+        ],
+        "responses": [
+          "No, this course does not offer any placement opportunities, but after completing the course you will definitely be able to find a job on your own"
+        ]
+      },
+      {
+        "tag": "certificate",
+        "patterns": [
+          "Can I get a certificate after completing the course?",
+          "Does this course offer any certificate?"
+        ],
+        "responses": [
+          "Yes, after completing the course, you will get a certificate of completion",
+          "Yes, upon successful completion of the course requirements, you will receive a certificate of completion."
         ]
       },
       {
         "tag": "features",
         "patterns": [
-          "What type of assignment do you give?",
-          "What about the doubt support?",
-          "Does this course offer placement opportunities also?",
           "How is the course different from other platform courses?",
-          "Does this course offer any certificate?",
-          "Where can I get testimonials for this course?",
-          "Do I get a mentor for this course?"
+          "What are the features of this course?",
+          "What special do I get from this course?",
+          "What is special about your course?"
         ],
         "responses": [
-          "We offer a variety of assignments tailored to enhance your learning experience. These assignments may include practical exercises, case studies, projects, quizzes, and more, designed to reinforce your understanding of the course material.",
-          "Doubt support is a crucial aspect of our courses. We have dedicated experts for solving the doubts of our students",
-          "No we don't offer placement opportunities within the course but after completing the course you will definitely be able to find a job on your own",
-          "Yes, upon successful completion of the course requirements, you will receive a certificate of completion.",
-          "Testimonials from satisfied students can be found on our website or through our social media channels.",
-          "Yes, each student enrolled in our course is assigned a mentor who provides guidance, support, and feedback throughout the duration of the course."
+          "The course is very different from other platform courses. The course is completely online. You can attend the course from anywhere in the world",
+          "The course offers a variety of features and options. You have dedicated doubt support, mentor support, and for practice there are various assignments",
+          "We provide a comprehensive range if features like doubt support, mentor support, and for practice there are various assignments, quizzes and projects. You can also get a certificate of completion"
+        ]
+      },
+      {
+        "tag": "testimonials",
+        "patterns": [
+          "What are some of the positive testimonials?",
+          "What are some of the negative testimonials?",
+          "Can I get some testimonials?",
+          "Where can I get testimonials for this course?"
+        ],
+        "responses": [
+          "Testimonials from satisfied students can be found on our website or through our social media channels."
         ]
       },
       {
