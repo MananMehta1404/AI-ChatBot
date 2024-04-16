@@ -1,5 +1,6 @@
 # AI Chatbot with Flask and JavaScript
 
+## Demo Video
 
 https://github.com/MananMehta1404/AI-ChatBot/assets/93565760/683e9508-1c47-4e0f-a43d-72ca5c7be3b8
 
@@ -9,7 +10,7 @@ https://github.com/MananMehta1404/AI-ChatBot/assets/93565760/683e9508-1c47-4e0f-
 Clone repo and create a virtual environment
 ```
 $ git clone https://github.com/MananMehta1404/AI-ChatBot
-$ cd AI-ChatBot/flask_app
+$ cd AI-ChatBot
 $ python3 -m venv venv
 $ . venv/bin/activate
 ```
